@@ -12,8 +12,7 @@ public class Hooks
     // dolayisiyla @Before ve @After stepdefinitions package'i altinda herhangi bir yerde olabilir
     // ancak uygulamada genellikle Hooks isminde bir class olusturup onun icine konulur
     @Before
-    public void setUp(){
-    }
+    public void setUp(){}
 
     // eger senaryo failed olursa fotograf ceker
     // ancak burada close driver oldugu icin artik steplerimize close driver koymamaliyiz

@@ -8,15 +8,16 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(
-        plugin={"html:target/cucumber-html-reports/cucumber.html", // buradaki / \\ idi, degistirdim, emin degilim
+        plugin = {"pretty",
+                "html:target/cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
-                "junit:target/xml-report/cucumber.xml"}, // bu satir ile html,xml,json report olusturabiliyoruz
-        features = "src/test/resources/features",
-        glue = "stepdefinitions, hooks",
-        tags = "@Dynamic",
-        dryRun = false // step definition olusturmak icin calistirdiginda burayı true yapmayi unutma
+                "junit:target/xml-report/cucumber.xml",
+                "rerun:target/failedRerun.txt"},
+        features ="src/test/resources/features",
+        glue = {"stepdefinitions","hooks"},
+        tags = "tag",
+        dryRun = false
 )
-
 public class Runner
 {
     // Runner class'inin body'sine hicbir kod yazmayacagiz
