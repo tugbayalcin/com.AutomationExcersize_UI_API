@@ -11,4 +11,10 @@ public class HomePage {
 
     @FindBy(xpath = "//ul//a[@href=\"/\"]")
     public WebElement headerHomeButon;
+
+    @FindBy(xpath ="//ul/li[5]/a/i" )
+    public WebElement testCaseButton;
+
+    @FindBy(xpath = "//span")
+    public WebElement testStepsText;
 }

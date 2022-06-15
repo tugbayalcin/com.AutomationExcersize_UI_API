@@ -12,7 +12,8 @@ import utilities.Driver;
 
 public class LoginSteps {
     //LoginPage loginPage = new LoginPage();
-AllPage page=new AllPage();
+    AllPage page = new AllPage();
+
 
     @Given("The user goes to the {string} page")
     public void the_user_goes_to_the_page(String automation) {
@@ -22,6 +23,7 @@ AllPage page=new AllPage();
 
     @Then("The user  verify that home page is visible successfully")
     public void the_user_verify_that_home_page_is_visible_successfully() {
+
         String expectedData = "Automation Exercise";
         String actualData = Driver.getDriver().getTitle();
         Assert.assertTrue(expectedData.equals(actualData));
