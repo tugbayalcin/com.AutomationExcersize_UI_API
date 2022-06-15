@@ -18,6 +18,7 @@ public class Hooks
     // ancak burada close driver oldugu icin artik steplerimize close driver koymamaliyiz
     // yoksa sayfayi kapatip yeniden acar
     @After
+
     public void tearDown(Scenario scenario)
     {
         final byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
