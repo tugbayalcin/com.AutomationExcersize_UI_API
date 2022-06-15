@@ -12,16 +12,16 @@ import utilities.Driver;
 
 public class LoginSteps {
     //LoginPage loginPage = new LoginPage();
-AllPage page=new AllPage();
+    AllPage page = new AllPage();
 
-    @Given("kullanici {string} sayfasina gider")
-    public void kullanici_sayfasina_gider(String url) {
-        Driver.getDriver().get("https://www.automationexercise.com/");
+    @Given("Navigate to url {string}")
+    public void navigate_to_url(String url) {
+        Driver.getDriver().get(ConfigReader.getProperty(url));
 
     }
 
-    @Then("kullanici adresin dogru adres oldugunu teyit eder")
-    public void kullanici_adresin_dogru_adres_oldugunu_teyit_eder() {
+    @Given("Verify that home page is visible successfully")
+    public void verify_that_home_page_is_visible_successfully() {
         String expectedData = "Automation Exercise";
         String actualData = Driver.getDriver().getTitle();
         Assert.assertTrue(expectedData.equals(actualData));

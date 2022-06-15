@@ -1,11 +1,11 @@
 Feature: ortak adimlar
 
   Background: Automation sayfasina gitme
-    Given kullanici "automation" sayfasina gider
+    Given Navigate to url 'automation'
 
   @tag
   Scenario: Login ve logout olma
-    Then  kullanici adresin dogru adres oldugunu teyit eder
+    Then  Verify that home page is visible successfully
     And   kullanici header daki signin butonuna tiklar
     When  kullanici Login to your account yazisinin goruntugunu teyit eder
     Then  kullanici login page de email kutusuna email girer

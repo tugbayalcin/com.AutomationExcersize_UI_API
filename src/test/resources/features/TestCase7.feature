@@ -2,7 +2,7 @@ Feature: Test Case 7
 
   @tc7
   Scenario: Test Case 7 Verify Test Cases Page
-    Given kullanici "automation" sayfasina gider
-    And kullanici adresin dogru adres oldugunu teyit eder
-    And kullanici Test Cases butonuna tiklar
-    And kullanici Test Case sayfasininin acildigini teyit eder
+    Given Navigate to url 'automation'
+    And Verify that home page is visible successfully
+    And Click on 'Test Cases' button
+    And Verify user is navigated to test cases page successfully

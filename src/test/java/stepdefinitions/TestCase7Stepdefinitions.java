@@ -9,12 +9,12 @@ public class TestCase7Stepdefinitions {
 
     AllPage obje=new AllPage();
 
-    @Given("kullanici Test Cases butonuna tiklar")
-    public void kullanici_test_cases_butonuna_tiklar() {
+    @Given("Click on {string} button")
+    public void click_on_button(String string) {
         obje.homePage().testCaseButton.click();
     }
-    @Given("kullanici Test Case sayfasininin acildigini teyit eder")
-    public void kullanici_test_case_sayfasininin_acildigini_teyit_eder() {
+    @Given("Verify user is navigated to test cases page successfully")
+    public void verify_user_is_navigated_to_test_cases_page_successfully() {
         ReusableMethods.waitFor(1);
         Assert.assertTrue(obje.homePage().testStepsText.isDisplayed());
     }
