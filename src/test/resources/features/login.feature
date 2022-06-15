@@ -1,22 +1,22 @@
 Feature: ortak adimlar
 
   Background: Automation sayfasina gitme
-    Given Navigate to url 'automation'
+    Given The user goes to the "automation" page
 
-  @tag
-  Scenario: Login ve logout olma
-    Then  Verify that home page is visible successfully
-    And   kullanici header daki signin butonuna tiklar
-    When  kullanici Login to your account yazisinin goruntugunu teyit eder
-    Then  kullanici login page de email kutusuna email girer
-    And   kullanici loginpage de password kutusuna password girer
-    When  kullanici login page de login butonuna tıklar
-    Then  kullanici login oldukdan sonra  header da logged in as username yazisinin gorundugunu teyit eder
-    When  kullanici header da logout butonuna basa
-    And   kullanici loginPage sayfasina donuldugunu teyit eder
+Scenario:Login ve logout olma
+
+  Then  The user  verify that home page is visible successfully
+  And   The user  clicks the signin button on the header
+  When  The user verify 'Login to your account' is visible
+  Then  The user enter correct email address in the email input box
+  And   The user enter correct password in the password input box
+  When  The user Click 'login' button on loginPage
+  Then  The user verify that 'Logged in as username' is visible after login
+  When  The user clicks the logout button on the header
+  And   The user confirms loginPage has been returned.
 
   Scenario: Ortak Pageler
-    Given Home page sayfasina git
-    Then Card page sayfasina git
-    And Login sayfasina git
-    Then Contact us sayfasina git
+    Given The user goes to the Home page.
+    Then The user goes to the Card page.
+    And The user goes to the Login page.
+    Then The user goes to the Contact us page.
