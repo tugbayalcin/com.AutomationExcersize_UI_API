@@ -1,6 +1,6 @@
-Feature:ortak adimlar
+Feature: ortak adimlar
 
-  Background:Automation sayfasina gitme
+  Background: Automation sayfasina gitme
     Given The user goes to the "automation" page
 
 Scenario:Login ve logout olma
@@ -14,7 +14,7 @@ Scenario:Login ve logout olma
   Then  The user verify that 'Logged in as username' is visible after login
   When  The user clicks the logout button on the header
   And   The user confirms loginPage has been returned.
-  @tag
+
   Scenario: Ortak Pageler
     Given The user goes to the Home page.
     Then The user goes to the Card page.
