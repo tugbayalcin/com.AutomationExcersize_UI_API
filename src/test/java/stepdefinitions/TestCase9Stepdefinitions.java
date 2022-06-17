@@ -21,8 +21,8 @@ public class TestCase9Stepdefinitions {
 
     }
 
-    @Given("Verify all the products related to search are visible")
-    public void verify_all_the_products_related_to_search_are_visible() {
+    @Given("AVerify all the products related to search are visible")
+    public void averify_all_the_products_related_to_search_are_visible() {
         int expectedCount=0;
         for (WebElement w:productPage.productPageAllProductDetailList ) {
             if(w.getText().contains("Tshirt")||w.getText().contains("T-Shirt")||w.getText().contains("T SHIRT")){

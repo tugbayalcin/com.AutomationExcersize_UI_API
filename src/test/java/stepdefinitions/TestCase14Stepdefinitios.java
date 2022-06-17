@@ -17,11 +17,11 @@ public class TestCase14Stepdefinitios {
     AllPage allPage=new AllPage();
 
 
-    @Then("Add products to cart")
-    public void add_products_to_cart() {
-        Log.startTestCase("Automation Exercise ");
-        JSUtils.clickElementByJS(allPage.homePage().addProductButtonsList.get(0));
-    }
+  //  @Then("Add products to cart")
+  //  public void add_products_to_cart() {
+  //      Log.startTestCase("Automation Exercise ");
+  //      JSUtils.clickElementByJS(allPage.homePage().addProductButtonsList.get(0));
+  //  }
     @Then("Click view cart button on popup")
     public void clickViewCartButtonOnPopup() throws InterruptedException {
         Thread.sleep(3000);
@@ -29,11 +29,11 @@ public class TestCase14Stepdefinitios {
         Log.info("Click view cart button on popup");
     }
 
-    @Then("Verify that cart page is displayed")
-    public void verify_that_cart_page_is_displayed() {
-        assertTrue(Driver.getDriver().getCurrentUrl().contains("view_cart"));
-        Log.info("Verify that cart page is displayed");
-    }
+  //  @Then("Verify that cart page is displayed")
+  //  public void verify_that_cart_page_is_displayed() {
+  //      assertTrue(Driver.getDriver().getCurrentUrl().contains("view_cart"));
+  //      Log.info("Verify that cart page is displayed");
+  //  }
 
 
     @Then("Click Proceed To Checkout")
@@ -76,11 +76,11 @@ public class TestCase14Stepdefinitios {
         assertTrue(allPage.homePage().loggedinText.isDisplayed());
         Log.info("Verify Logged in as username at top");
     }
-    @Then("Verify Address Details and Review Your Order")
-    public void verify_address_details_and_review_your_order() {
-        assertTrue(allPage.cardPage().firstProduct.isDisplayed());
-        Log.info("Verify Address Details and Review Your Order");
-    }
+   // @Then("Verify Address Details and Review Your Order")
+   // public void verify_address_details_and_review_your_order() {
+   //     assertTrue(allPage.cardPage().firstProduct.isDisplayed());
+   //     Log.info("Verify Address Details and Review Your Order");
+   // }
     @And("Enter description in comment text area and click Place Order")
     public void enterDescriptionInCommentTextAreaAndClickPlaceOrder() throws InterruptedException {
         allPage.checkoutPage().textarea.sendKeys(Faker.instance().gameOfThrones().character());

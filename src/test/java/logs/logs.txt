@@ -11,4 +11,48 @@
 2022-06-16 13:00:10 INFO  Log:35 - The user goes to the Home page
 2022-06-16 13:00:12 INFO  Log:35 - The user goes to the Card page
 2022-06-16 13:00:13 INFO  Log:35 - The user goes to the Login page
-2022-06-16 13:00:14 INFO  Log:35 - The user goes to the Contact Us page
+2022-06-16 13:00:14 INFO  Log:35 - The user goes to the Contact Us page2022-06-17 21:59:56 INFO  Log:14 - ---------------------------------------------------------------------------------------
+2022-06-17 21:59:56 INFO  Log:15 - ***********************        Automation Exercise  START    **************************
+2022-06-17 21:59:56 INFO  Log:16 - ---------------------------------------------------------------------------------------
+2022-06-17 22:00:01 INFO  Log:35 - The user goes to the automation page
+2022-06-17 22:00:12 INFO  Log:35 - Click view cart button on popup
+2022-06-17 22:00:15 INFO  Log:35 - Click Proceed To Checkout
+2022-06-17 22:00:20 INFO  Log:35 - Click Register Login button at cart page
+2022-06-17 22:00:30 INFO  Log:35 - Fill all details in Signup and create account
+2022-06-17 22:00:34 INFO  Log:35 - Verify ACCOUNT CREATED! and click Continue button
+2022-06-17 22:00:34 INFO  Log:35 - Verify Logged in as username at top
+2022-06-17 22:00:35 INFO  Log:35 - Click Cart button
+2022-06-17 22:00:40 INFO  Log:35 - Click Proceed To Checkout
+2022-06-17 22:01:54 INFO  Log:14 - ---------------------------------------------------------------------------------------
+2022-06-17 22:01:54 INFO  Log:15 - ***********************        Automation Exercise  START    **************************
+2022-06-17 22:01:54 INFO  Log:16 - ---------------------------------------------------------------------------------------
+2022-06-17 22:02:00 INFO  Log:35 - The user goes to the automation page
+2022-06-17 22:02:11 INFO  Log:35 - Click view cart button on popup
+2022-06-17 22:02:14 INFO  Log:35 - Click Proceed To Checkout
+2022-06-17 22:02:19 INFO  Log:35 - Click Register Login button at cart page
+2022-06-17 22:02:31 INFO  Log:35 - Fill all details in Signup and create account
+2022-06-17 22:02:37 INFO  Log:35 - Verify ACCOUNT CREATED! and click Continue button
+2022-06-17 22:02:37 INFO  Log:35 - Verify Logged in as username at top
+2022-06-17 22:02:38 INFO  Log:35 - Click Cart button
+2022-06-17 22:02:43 INFO  Log:35 - Click Proceed To Checkout
+2022-06-17 22:04:06 INFO  Log:14 - ---------------------------------------------------------------------------------------
+2022-06-17 22:04:06 INFO  Log:15 - ***********************        Automation Exercise  START    **************************
+2022-06-17 22:04:06 INFO  Log:16 - ---------------------------------------------------------------------------------------
+2022-06-17 22:04:13 INFO  Log:35 - The user goes to the automation page
+2022-06-17 22:04:23 INFO  Log:35 - Click view cart button on popup
+2022-06-17 22:04:26 INFO  Log:35 - Click Proceed To Checkout
+2022-06-17 22:04:31 INFO  Log:35 - Click Register Login button at cart page
+2022-06-17 22:04:42 INFO  Log:35 - Fill all details in Signup and create account
+2022-06-17 22:04:45 INFO  Log:35 - Verify ACCOUNT CREATED! and click Continue button
+2022-06-17 22:04:45 INFO  Log:35 - Verify Logged in as username at top
+2022-06-17 22:04:46 INFO  Log:35 - Click Cart button
+2022-06-17 22:04:52 INFO  Log:35 - Click Proceed To Checkout
+2022-06-17 22:04:53 INFO  Log:35 - Enter description in comment text area and click Place Order
+2022-06-17 22:04:54 INFO  Log:35 - Enter payment details: Name on Card, Card Number, CVC, Expiration date
+2022-06-17 22:04:57 INFO  Log:35 - Click Pay and Confirm Order button
+2022-06-17 22:04:57 INFO  Log:35 - Verify success message Your order has been placed successfully!
+2022-06-17 22:04:59 INFO  Log:35 - Click Delete Account button
+2022-06-17 22:04:59 INFO  Log:35 - Verify ACCOUNT DELETED! and click Continue button
+2022-06-17 22:04:59 INFO  Log:24 - ---------------------------------------------------------------------------------------
+2022-06-17 22:04:59 INFO  Log:25 - **************************        Automation Exercise END    **************************
+2022-06-17 22:04:59 INFO  Log:26 - ---------------------------------------------------------------------------------------
