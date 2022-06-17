@@ -1,7 +1,7 @@
 package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -9,6 +9,7 @@ import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import java.time.Duration;
+import java.util.NoSuchElementException;
 
 public class Driver
 {
@@ -16,7 +17,6 @@ public class Driver
     // ve de kimse buna erisemesin, dolayisiyla da obje uretemesin diye access modifier'ini private yaptik
     // artik kimmse Drievr class'indan obje uretemez !!!!!
     private static WebDriver driver; // public yapmazsak diger package'lar csagiramaz
-
     public static WebDriver getDriver(){ // return type WeDriver, cunku ben bu methodun bana driver vermesini istiyorum
 
         if(driver == null){
@@ -80,6 +80,11 @@ public class Driver
         driver = null;
 
     }
+<<<<<<< HEAD
+
+
+=======
 */
+>>>>>>> a93dc7b298e9d2bc6e17861fd6a3e07b25895780
 }
 

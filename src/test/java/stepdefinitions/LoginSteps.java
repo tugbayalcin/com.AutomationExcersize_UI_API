@@ -17,8 +17,6 @@ public class LoginSteps {
 AllPage page=new AllPage();
 
    
-    AllPage page = new AllPage();
-
 
     @Given("The user goes to the {string} page")
     public void the_user_goes_to_the_page(String automation) {
