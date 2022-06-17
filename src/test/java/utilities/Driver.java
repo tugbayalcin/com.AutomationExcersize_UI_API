@@ -1,8 +1,10 @@
 package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -10,6 +12,7 @@ import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import java.time.Duration;
+import java.util.NoSuchElementException;
 
 public class Driver
 {
@@ -17,7 +20,6 @@ public class Driver
     // ve de kimse buna erisemesin, dolayisiyla da obje uretemesin diye access modifier'ini private yaptik
     // artik kimmse Drievr class'indan obje uretemez !!!!!
     private static WebDriver driver; // public yapmazsak diger package'lar csagiramaz
-
     public static WebDriver getDriver(){ // return type WeDriver, cunku ben bu methodun bana driver vermesini istiyorum
 
         if(driver == null){
@@ -67,7 +69,7 @@ public class Driver
 
         return driver;
     }
-
+/*
     public static void closeDriver(){
         // olusturuken kullandigimiz null mi degil mi kontrolunu burada da kullanmamiz gerekiyor
         // yoksa pes pese calisan testlerde her test sonunda kapatma methodunu kullanirsam,
@@ -82,6 +84,7 @@ public class Driver
 
     }
 
+*/
 
 }
 

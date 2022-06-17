@@ -10,86 +10,98 @@ import pages.AllPage;
 import pages.LoginPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.Log;
 
 public class LoginSteps {
+
     LoginPage loginPage = new LoginPage();
     AllPage page=new AllPage();
 
-    @Given("kullanici {string} sayfasina gider")
-    public void kullanici_sayfasina_gider(String url) {
-        Driver.getDriver().get("https://www.automationexercise.com/");
+
+
+AllPage page=new AllPage();
+
+
+   
+
+    @Given("The user goes to the {string} page")
+    public void the_user_goes_to_the_page(String automation) {
+       Log.startTestCase("Automation Exercise ");
+        Driver.getDriver().get(ConfigReader.getProperty("automation"));
+        Log.info("The user goes to the automation page");
 
     }
 
-    @Then("kullanici adresin dogru adres oldugunu teyit eder")
-    public void kullanici_adresin_dogru_adres_oldugunu_teyit_eder() {
+    @Then("The user  verify that home page is visible successfully")
+    public void the_user_verify_that_home_page_is_visible_successfully() {
+
         String expectedData = "Automation Exercise";
         String actualData = Driver.getDriver().getTitle();
         Assert.assertTrue(expectedData.equals(actualData));
 
+
     }
 
-    @Then("kullanici header daki signin butonuna tiklar")
-    public void kullanici_header_daki_signin_butonuna_tiklar() {
+    @Then("The user  clicks the signin button on the header")
+    public void the_user_clicks_the_signin_button_on_the_header() {
         page.loginPage().headerSignUpbutonElement.click();
+        Log.info("The user  clicks the signin button on the header");
 
     }
 
-    @When("kullanici Login to your account yazisinin goruntugunu teyit eder")
-    public void kullanici_login_to_your_account_yazisinin_goruntugunu_teyit_eder() {
+    @When("The user verify {string} is visible")
+    public void the_user_verify_is_visible(String string) {
         Assert.assertTrue(page.loginPage().newUsersigupYaziElement.isDisplayed());
     }
 
-    @Then("kullanici login page de email kutusuna email girer")
-    public void kullanici_login_page_de_email_kutusuna_email_girer() {
+    @Then("The user enter correct email address in the email input box")
+    public void the_user_enter_correct_email_address_in_the_email_input_box() {
         page.loginPage().loginSayfasiEmailAdressInput.sendKeys(ConfigReader.getProperty("username"));
+        Log.info("The user enter correct email and password to related input boxes and press the login button to login");
 
     }
 
-    @Then("kullanici loginpage de password kutusuna password girer")
-    public void kullanici_loginpage_de_password_kutusuna_password_girer() {
+    @Then("The user enter correct password in the password input box")
+    public void the_user_enter_correct_password_in_the_password_input_box() {
         page.loginPage().loginSayfasiPasswordInput.sendKeys(ConfigReader.getProperty("password"));
     }
 
-    @When("kullanici login page de login butonuna tıklar")
-    public void kullanici_login_page_de_login_butonuna_tıklar() {
+    @When("The user Click {string} button on loginPage")
+    public void the_user_click_button_on_login_page(String string) {
         page.loginPage().loginSayfasiLoginButonu.click();
 
     }
 
-    @Then("kullanici login oldukdan sonra  header da logged in as username yazisinin gorundugunu teyit eder")
-    public void kullanici_login_oldukdan_sonra_header_da_logged_in_as_username_yazisinin_gorundugunu_teyit_eder() {
+    @Then("The user verify that {string} is visible after login")
+    public void the_user_verify_that_is_visible_after_login(String string) {
         Assert.assertTrue(page.loginPage().logInAsWebElement.isDisplayed());
+        Log.info("The user verifies that it's logged in.");
     }
 
-    @When("kullanici header da logout butonuna basa")
-    public void kullanici_header_da_logout_butonuna_basa() {
-        page.loginPage().headerLogOutButonu.click();
+    @When("The user clicks the logout button on the header")
+    public void the_user_clicks_the_logout_button_on_the_header() {page.loginPage().headerLogOutButonu.click();
+        Log.info("The user press logout butto to logout");
     }
 
-    @When("kullanici loginPage sayfasina donuldugunu teyit eder")
-    public void kullanici_login_page_sayfasina_donuldugunu_teyit_eder() {
+
+    @When("The user confirms loginPage has been returned.")
+    public void the_user_confirms_login_page_has_been_returned() {
         Assert.assertTrue(page.loginPage().loginYourAccountYazisi.isDisplayed());
+        Log.info("The user confirms loginPage has been returned");
+        Log.endTestCase("Automation Exercise");
 
     }
 
-    @Given("Home page sayfasina git")
-    public void homePageSayfasinaGit() {
-        page.homePage().headerHomeButon.click();
-    }
+    @Given("The user goes to the Home page.")
+    public void the_user_goes_to_the_home_page() {page.homePage().headerHomeButon.click(); Log.info("The user goes to the Home page");   }
 
-    @Then("Card page sayfasina git")
-    public void cardPageSayfasinaGit() {
-        page.cardPage().headerCardpageButton.click();
-    }
+    @Then("The user goes to the Card page.")
+    public void the_user_goes_to_the_card_page() {page.cardPage().headerCardpageButton.click(); Log.info("The user goes to the Card page");}
 
-    @And("Login sayfasina git")
-    public void loginSayfasinaGit() {
-        page.loginPage().headerSignUpbutonElement.click();
-    }
+    @Then("The user goes to the Login page.")
+    public void the_user_goes_to_the_login_page() {page.loginPage().headerSignUpbutonElement.click(); Log.info("The user goes to the Login page");  }
 
-    @Then("Contact us sayfasina git")
-    public void contactUsSayfasinaGit() {
-        page.contactUsPage().headerContactUsButon.click();
-    }
+    @Then("The user goes to the Contact us page.")
+    public void the_user_goes_to_the_contact_us_page() { page.contactUsPage().headerContactUsButon.click(); Log.info("The user goes to the Contact Us page"); }
+
 }
