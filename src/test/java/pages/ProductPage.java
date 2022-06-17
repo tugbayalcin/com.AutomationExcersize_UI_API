@@ -27,6 +27,32 @@ public class ProductPage {
      @FindBy(css = "[class=\"product-information\"]")
     public WebElement firstProductDetails;
 
+    @FindBy(xpath="//input[@id='search_product']")
+    public WebElement searchProduct;
+
+    @FindBy(xpath="//h2[@class='title text-center']")
+    public WebElement searchedProductsText;
+
+
+    @FindBy(xpath = "//i[@class= 'fa fa-search']")
+    public WebElement searchButton;
+
+
+    @FindBy(css = "[class=\"product-image-wrapper\"]")
+    public List<WebElement> productPageSearchResultList;
+
+    @FindBy(css = "[class=\"single-products\"]")
+    public List<WebElement> productPageAllProductDetailList;
+
+    @FindBy(xpath = "//a[text()='Proceed To Checkout']")
+    public WebElement proceedToCheckoutButton;
+    @FindBy(xpath = "(//p[@class='text-center'])[2]")
+    public WebElement registerLoginButtonu;
 
 
 }
+
+
+
+
+
