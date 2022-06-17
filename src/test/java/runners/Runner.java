@@ -16,12 +16,15 @@ import org.junit.runner.RunWith;
         features ="src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
 
+        tags = "@tc24",
+        dryRun = false
 
-        tags = "@TC10",
 
 
 
-        dryRun = true
+
+
+
 
 )
 public class Runner
