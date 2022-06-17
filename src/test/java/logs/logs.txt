@@ -1,0 +1,14 @@
+2022-06-16 12:55:59 INFO  Log:35 - The user goes to the automation page
+2022-06-16 12:56:01 INFO  Log:35 - The user  clicks the signin button on the header
+2022-06-16 12:56:01 INFO  Log:35 - The user enter correct email and password to related input boxes and press the login button to login
+2022-06-16 12:56:20 INFO  Log:35 - The user verifies that it's logged in.
+2022-06-16 12:56:23 INFO  Log:35 - The user press logout butto to logout
+2022-06-16 12:56:23 INFO  Log:35 - The user confirms loginPage has been returned
+2022-06-16 12:59:43 INFO  Log:14 - ---------------------------------------------------------------------------------------
+2022-06-16 12:59:44 INFO  Log:15 - ***********************        Automation exercise Test is started START    **************************
+2022-06-16 12:59:44 INFO  Log:16 - ---------------------------------------------------------------------------------------
+2022-06-16 13:00:02 INFO  Log:35 - The user goes to the automation page
+2022-06-16 13:00:10 INFO  Log:35 - The user goes to the Home page
+2022-06-16 13:00:12 INFO  Log:35 - The user goes to the Card page
+2022-06-16 13:00:13 INFO  Log:35 - The user goes to the Login page
+2022-06-16 13:00:14 INFO  Log:35 - The user goes to the Contact Us page

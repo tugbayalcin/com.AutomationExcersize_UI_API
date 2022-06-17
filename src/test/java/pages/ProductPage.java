@@ -24,8 +24,64 @@ public class ProductPage {
     @FindBy(css = "[href=\"/product_details/1\"]")
     public WebElement firstViewProduct;
 
-     @FindBy(css = "[class=\"product-information\"]")
+    @FindBy(css = "[class=\"product-information\"]")
     public WebElement firstProductDetails;
+
+    @FindBy(css = "[id='search_product']")
+    public WebElement productSearchBox;
+
+    @FindBy(css = "[id='submit_search']")
+    public WebElement productSearchButton;
+
+    @FindBy(css = "[class='title text-center']")
+    public WebElement searchedProductsTitle;
+
+    @FindBy(css = "[class='single-products']")
+    public List<WebElement> allSearchedProductList;
+
+    @FindBy(css = "[class='productinfo text-center']")
+    public List<WebElement> addToCartButtonList;
+
+    @FindBy(css = "[class='nav navbar-nav']")
+    public WebElement cartButton;
+
+    @FindBy(css = "[class='btn btn-success close-modal btn-block']")
+    public WebElement continueShoppingButton;
+
+    @FindBy(css = "[class='active']")
+    public WebElement reviewsLine;
+
+    @FindBy(css = "[id='name']")
+    public WebElement reviewsNameTextBox;
+
+    @FindBy(css = "[id='email']")
+    public WebElement reviewsEmailTextBox;
+
+    @FindBy(css = "[id='review']")
+    public WebElement reviewsTextArea;
+
+    @FindBy(css = "[id='button-review']")
+    public WebElement reviewSubmitButton;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
