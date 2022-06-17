@@ -22,19 +22,20 @@ import java.util.List;
 
 import java.util.NoSuchElementException;
 
-public class Driver
-{
-    private Driver(){} // default constructor'i oldurmek icin kendim parametresiz constructor yazdim
+public class Driver {
+    private Driver() {
+    } // default constructor'i oldurmek icin kendim parametresiz constructor yazdim
+
     // ve de kimse buna erisemesin, dolayisiyla da obje uretemesin diye access modifier'ini private yaptik
     // artik kimmse Drievr class'indan obje uretemez !!!!!
     private static WebDriver driver; // public yapmazsak diger package'lar csagiramaz
 
     private static int timeout = 5;
 
-    public static WebDriver getDriver(){ // return type WeDriver, cunku ben bu methodun bana driver vermesini istiyorum
+    public static WebDriver getDriver() { // return type WeDriver, cunku ben bu methodun bana driver vermesini istiyorum
 
-        if(driver == null){
-            switch (ConfigReader.getProperty("browser")){
+        if (driver == null) {
+            switch (ConfigReader.getProperty("browser")) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
@@ -81,6 +82,9 @@ public class Driver
         return driver;
     }
 
+
+
+
     public static void closeDriver(){
         // olusturuken kullandigimiz null mi degil mi kontrolunu burada da kullanmamiz gerekiyor
         // yoksa pes pese calisan testlerde her test sonunda kapatma methodunu kullanirsam,
@@ -89,7 +93,7 @@ public class Driver
         // 2. test methodunda calistirdigimda new keyword'u kullanilmiyor, eski driver kullanilmaya devam ediliyor
         // ancak onu da kapattigimiz icin 2. test methodunda driver islevsiz hale geliyor
         if(driver != null){
-          //  driver.quit();
+          driver.quit();
         }
         driver = null;
 
@@ -316,3 +320,4 @@ public class Driver
     }
 
 }
+

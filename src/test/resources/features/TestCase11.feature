@@ -1,6 +1,6 @@
 Feature: Test Case 11: Verify Subscription in Cart page
 
-
+  @alltest
   Scenario:
 
     Given The user goes to the "automation" page

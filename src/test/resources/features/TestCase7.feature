@@ -1,6 +1,6 @@
 Feature: Test Case 7
 
-  @tc7
+  @alltest
   Scenario: Test Case 7 Verify Test Cases Page
     Given The user goes to the "automation" page
     And The user  verify that home page is visible successfully

@@ -6,18 +6,19 @@ import org.openqa.selenium.WebElement;
 import pages.AllPage;
 import pages.ProductPage;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class TestCase9Stepdefinitions {
     ProductPage productPage=new ProductPage();
     AllPage obje = new AllPage();
 
     @Given("Enter product name in search input and click search button")
-    public void enter_product_name_in_search_input_and_click_search_button() {
-        Driver.waitAndClick(productPage.searchProduct);
+    public void enter_product_name_in_search_input_and_click_search_button() throws InterruptedException {
+        ReusableMethods.waitAndClick(productPage.searchProduct);
         productPage.searchProduct.sendKeys("Tshirt");
-        Driver.wait(2);
+        ReusableMethods.waitFor(2);
         productPage.searchButton.click();
-        Driver.wait(2);
+        ReusableMethods.waitFor(2);
 
     }
 

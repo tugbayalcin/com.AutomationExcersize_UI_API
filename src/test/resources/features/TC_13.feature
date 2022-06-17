@@ -1,7 +1,7 @@
 
 Feature: Test Case 13:
 
-
+  @alltest
   Scenario: Verify Product quantity in Cart
 
     Given kullanici "automation" sayfasina gider

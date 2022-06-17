@@ -1,4 +1,6 @@
 Feature:
+
+  @alltest
   Scenario: Test Case 17: Remove Products From Cart
 
   Given Launch browser

@@ -1,6 +1,6 @@
 Feature: Test Case 21
 
-  @tc20-21
+  @alltest
   Scenario: Add review on product
     Given The user goes to the "automation" page
     Then Click on 'Products' button.

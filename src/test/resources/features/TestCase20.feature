@@ -1,6 +1,6 @@
 Feature: Test Case 20
 
-@tc20-21
+  @alltest
   Scenario Outline: Search Products and Verify Cart After Login
     Given The user goes to the "automation" page
     Then Click on 'Products' button.
