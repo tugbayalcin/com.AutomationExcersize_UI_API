@@ -14,7 +14,6 @@ import utilities.Log;
 public class LoginSteps {
 
 
-AllPage page=new AllPage();
 
    
     AllPage page = new AllPage();
