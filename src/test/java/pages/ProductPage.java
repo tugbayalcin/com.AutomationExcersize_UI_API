@@ -15,7 +15,7 @@ public class ProductPage {
     @FindBy(xpath = "//ul//a[@href=\"/products\"]")
     public WebElement headerProductPage;
 
-    @FindBy(xpath = "//h2[@class='title text-center']")
+   @FindBy(xpath = "//h2[@class='title text-center']")
     public WebElement allProductsText;
 
     @FindBy(css = "[class=\"single-products\"]")
