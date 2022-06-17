@@ -117,7 +117,22 @@ public class HomePage {
 
     @FindBy(xpath = "//span")
     public WebElement testStepsText;
+    @FindBy (id="scrollUp")
+    //@FindBy(xpath = "//*[@class='fa fa-angle-up']")
+    public WebElement scrollUpArrow;
+    @FindBy (xpath = "(//h2)[3]")
+    public WebElement verificationText1;  //Full-Fledged practice website for Automation Engineers
 
+    @FindBy (xpath = "(//h2)[2]")
+    public WebElement verificationText2;   //Full-Fledged practice website for Automation Engineers
+
+    @FindBy (xpath = "(//h2)[1]")
+    public WebElement verificationText3;   //Full-Fledged practice website for Automation Engineers
+
+    //anasayfada 3 sekmede de ortak olan text in birden fazla locate i var hepsini yazdim ben, ve hepsine baktim
+    //kodu yazarken de o anda hangi sekmedeki text i gorurse ona baksin dedim
+    @FindBy(xpath = "//*[contains(text(),'Subscription')]")
+    public WebElement subciptionText;
 
     @FindBy(xpath = "//*[.='Add to cart']")
     public List<WebElement> addProductButtonsList;
@@ -140,7 +155,6 @@ public class HomePage {
 
     @FindBy(xpath = "//button[@id='subscribe']")
     public WebElement emailboxButton;
-
 
 
 

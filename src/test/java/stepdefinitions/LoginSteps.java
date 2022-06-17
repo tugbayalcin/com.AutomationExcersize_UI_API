@@ -19,7 +19,6 @@ public class LoginSteps {
 
 
 
-AllPage page=new AllPage();
 
 
    

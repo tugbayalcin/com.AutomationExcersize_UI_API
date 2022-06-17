@@ -89,7 +89,7 @@ public class Driver
         // 2. test methodunda calistirdigimda new keyword'u kullanilmiyor, eski driver kullanilmaya devam ediliyor
         // ancak onu da kapattigimiz icin 2. test methodunda driver islevsiz hale geliyor
         if(driver != null){
-            driver.quit();
+          //  driver.quit();
         }
         driver = null;
 
