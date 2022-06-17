@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -11,8 +12,8 @@ import utilities.ConfigReader;
 import utilities.Driver;
 
 public class LoginSteps {
-    //LoginPage loginPage = new LoginPage();
-AllPage page=new AllPage();
+    LoginPage loginPage = new LoginPage();
+    AllPage page=new AllPage();
 
     @Given("kullanici {string} sayfasina gider")
     public void kullanici_sayfasina_gider(String url) {

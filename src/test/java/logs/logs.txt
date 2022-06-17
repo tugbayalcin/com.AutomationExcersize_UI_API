@@ -1,0 +1,6 @@
+
+2022-06-17 15:11:53 INFO  Log:35 - Anasayfaya giris basarili
+2022-06-17 15:11:56 INFO  Log:35 - Urun detay acilisi basarili
+2022-06-17 15:11:56 INFO  Log:35 - Sepete ekleme basarili
+2022-06-17 15:13:00 INFO  Log:35 - Anasayfaya giris basarili
+2022-06-17 15:13:08 INFO  Log:35 - Her iki urunun sepete eklendigi dogrulandi
