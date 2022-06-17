@@ -14,7 +14,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+
 import java.util.List;
+
 import java.util.NoSuchElementException;
 
 public class Driver
@@ -23,7 +25,9 @@ public class Driver
     // ve de kimse buna erisemesin, dolayisiyla da obje uretemesin diye access modifier'ini private yaptik
     // artik kimmse Drievr class'indan obje uretemez !!!!!
     private static WebDriver driver; // public yapmazsak diger package'lar csagiramaz
+
     private static int timeout = 5;
+
     public static WebDriver getDriver(){ // return type WeDriver, cunku ben bu methodun bana driver vermesini istiyorum
 
         if(driver == null){
@@ -73,7 +77,7 @@ public class Driver
 
         return driver;
     }
-
+/*
     public static void closeDriver(){
         // olusturuken kullandigimiz null mi degil mi kontrolunu burada da kullanmamiz gerekiyor
         // yoksa pes pese calisan testlerde her test sonunda kapatma methodunu kullanirsam,
@@ -263,12 +267,8 @@ public class Driver
      *
      * @param elements
      */
-    public static void clickWithJSAsList(List<WebElement> elements) {
-        for (WebElement each : elements) {
-            ((JavascriptExecutor) Driver.getDriver()).executeScript("arguments[0].scrollIntoView(true);", waitForVisibility(each, 5));
-            ((JavascriptExecutor) Driver.getDriver()).executeScript("arguments[0].click();", each);
-        }
-    }
+
+
     /**
      * Performs double click action on an element
      *

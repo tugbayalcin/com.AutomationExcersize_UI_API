@@ -10,6 +10,9 @@ public class AllPage {
     private HomePage homePage;
     private LoginPage loginPage;
     private ProductPage productPage;
+    private SignupPage signupPage;
+    private CheckoutPage checkoutPage;
+    private PaymentPage paymentPage;
 
     public CardPage cardPage(){
         if (cardPage==null){
@@ -38,5 +41,20 @@ public class AllPage {
             productPage=new ProductPage();
         }return productPage;
     }
+    public SignupPage signupPage(){
+        if (signupPage==null){
+            signupPage=new SignupPage();
+        }return signupPage;
+    }
+    public CheckoutPage checkoutPage(){
+        if (checkoutPage==null){
+            checkoutPage=new CheckoutPage();
+        }return checkoutPage;
+    }
 
+    public PaymentPage paymentPage(){
+        if (paymentPage==null){
+            paymentPage=new PaymentPage();
+        }return paymentPage;
+    }
 }
