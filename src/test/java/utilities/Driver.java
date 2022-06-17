@@ -1,6 +1,9 @@
 package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -91,6 +94,7 @@ public class Driver
         driver = null;
 
     }
+<<<<<<< HEAD
 
     public static void waitAndClick(WebElement element, int timeout) {
         for (int i = 0; i < timeout; i++) {
@@ -310,4 +314,9 @@ public class Driver
     public static void waitAndClickLocationText(WebElement element, String value) {
         Driver.getDriver().findElement(By.xpath("//*[text()='" + value + "']")).click();
     }
+=======
+
+*/
+
+>>>>>>> 8e4c7c70d18f2b24750764b7c00470cc4584be30
 }
