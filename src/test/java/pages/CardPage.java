@@ -15,6 +15,7 @@ public class CardPage {
     public WebElement headerCardpageButton;
 
 
+
     @FindBy(xpath = "(//a[@class='btn btn-default add-to-cart'])[3]")
     public WebElement addToCartButonu;
 
@@ -61,6 +62,13 @@ public class CardPage {
 
     @FindBy(xpath = "//button[text()='Continue Shopping']")
     public WebElement continueShoppingButonu;
+
+    @FindBy(xpath = "//i[@class='fa fa-times']")
+    public WebElement productDelete;
+
+    @FindBy (xpath = "(//p[@class='text-center'])[3]")
+    public WebElement cartEmptyText;
+
 
     @FindBy(xpath = "//*[.='Proceed To Checkout']")
     public WebElement proceedToCheckoutButton;
