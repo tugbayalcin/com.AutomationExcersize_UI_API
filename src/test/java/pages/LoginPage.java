@@ -22,12 +22,22 @@ public class LoginPage {
 
     @FindBy(xpath = "//a[text()=' Logged in as ']")
     public WebElement logInAsWebElement;
+
     @FindBy(xpath = "//a[text()=' Logout']")
     public WebElement headerLogOutButonu;
+
     @FindBy(xpath = "//h2[text()='Login to your account']")
     public WebElement loginYourAccountYazisi;
 
 
+    @FindBy(xpath = "//input[@name='name']")
+    public WebElement nameBox;
+
+    @FindBy(xpath = "(//input[@name='email'])[2]")
+    public WebElement emailBox;
+
+    @FindBy(xpath = "(//button[@type='submit'])[2]")
+    public WebElement signupButton;
 
 
 }
