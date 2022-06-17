@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -13,11 +14,14 @@ import utilities.Log;
 
 public class LoginSteps {
 
+    LoginPage loginPage = new LoginPage();
+    AllPage page=new AllPage();
+
+
+
 
 
    
-    AllPage page = new AllPage();
-
 
     @Given("The user goes to the {string} page")
     public void the_user_goes_to_the_page(String automation) {
