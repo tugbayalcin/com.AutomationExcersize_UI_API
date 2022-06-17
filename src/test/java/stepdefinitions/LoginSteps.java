@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -13,8 +14,13 @@ import utilities.Log;
 
 public class LoginSteps {
 
+    LoginPage loginPage = new LoginPage();
+    AllPage page=new AllPage();
+
+
 
 AllPage page=new AllPage();
+
 
    
 

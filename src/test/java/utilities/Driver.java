@@ -1,6 +1,9 @@
 package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -80,11 +83,8 @@ public class Driver
         driver = null;
 
     }
-<<<<<<< HEAD
 
-
-=======
 */
->>>>>>> a93dc7b298e9d2bc6e17861fd6a3e07b25895780
+
 }
 
