@@ -66,7 +66,7 @@ public class Driver
 
         return driver;
     }
-
+/*
     public static void closeDriver(){
         // olusturuken kullandigimiz null mi degil mi kontrolunu burada da kullanmamiz gerekiyor
         // yoksa pes pese calisan testlerde her test sonunda kapatma methodunu kullanirsam,
@@ -80,7 +80,11 @@ public class Driver
         driver = null;
 
     }
+<<<<<<< HEAD
 
 
+=======
+*/
+>>>>>>> a93dc7b298e9d2bc6e17861fd6a3e07b25895780
 }
 

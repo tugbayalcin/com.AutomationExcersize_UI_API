@@ -20,6 +20,7 @@ public class HomePage {
     @FindBy(xpath = "//span")
     public WebElement testStepsText;
 
+
     @FindBy(xpath = "//*[.='Add to cart']")
     public List<WebElement> addProductButtonsList;
 
@@ -34,4 +35,16 @@ public class HomePage {
 
     @FindBy(xpath = "//button[.='Delete']")
     public WebElement deleteAccoutConfirmationButton;
+
+    @FindBy(xpath = "//input[@id='susbscribe_email']")
+    public WebElement emailbox;
+
+    @FindBy(xpath = "//h2[contains(text(),'Subscription')]")
+    public WebElement SubscriptionText;
+
+    @FindBy(xpath = "//button[@id='subscribe']")
+    public WebElement emailboxButton;
+
+
+
 }
