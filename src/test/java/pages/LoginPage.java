@@ -27,7 +27,11 @@ public class LoginPage {
     @FindBy(xpath = "//h2[text()='Login to your account']")
     public WebElement loginYourAccountYazisi;
 
-
-
-
+////////////////////////////////////
+    @FindBy(xpath = "//a[text()=' Delete Account']")
+    public WebElement deleteButtonWebElement;
+    @FindBy(xpath = "//h1[text()='Delete Account']")
+    public WebElement deletepageDeleteAccountButon;
+    @FindBy(xpath = "(//form/p)[1]")
+    public WebElement incorrectemailOrPasswordBox;
 }
