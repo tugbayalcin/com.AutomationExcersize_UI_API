@@ -46,4 +46,17 @@ public class LoginPage {
     @FindBy(xpath = "(//form/p)[1]")
     public WebElement incorrectemailOrPasswordBox;
 
+    // TC005
+    @FindBy(css = "[data-qa=\"signup-button\"]")
+    public WebElement loginSayfasiSignupButonu;
+
+    @FindBy(css = "input[name=\"name\"]")
+    public WebElement loginSayfasiNewUserNameBox;
+
+    @FindBy(css = "section#form div:nth-child(3) > div > form > input[name=\"email\"]")
+    public WebElement loginSayfasiNewUserEmailBox;
+
+    @FindBy(xpath = "//p[normalize-space()='Email Address already exist!']")
+    public WebElement loginSayfasiNewUserEmailAdressAlreadyExistText;
+
 }
