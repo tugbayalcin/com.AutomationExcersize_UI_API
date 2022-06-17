@@ -1,4 +1,5 @@
 Feature:
+  @tc16
   Scenario: TC16 Place Order: Login before Checkout
 
     Given Launch browser

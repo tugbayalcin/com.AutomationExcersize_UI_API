@@ -8,4 +8,4 @@ Feature: Test Case 9
    * Verify user is navigated to ALL PRODUCTS page successfully
    * Enter product name in search input and click search button
    * Verify SEARCHED PRODUCTS is visible
-   * Verify all the products related to search are visible
+   * AVerify all the products related to search are visible
