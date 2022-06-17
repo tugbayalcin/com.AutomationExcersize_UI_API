@@ -1,5 +1,5 @@
 Feature: Test Case 9
-  @tc9
+  @alltest
   Scenario: Test Case 9 Verify Test Cases Page
 
     * The user goes to the "automation" page

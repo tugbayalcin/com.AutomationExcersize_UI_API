@@ -1,7 +1,7 @@
 
 Feature: Test Case 12:
 
-
+  @alltest
   Scenario: Add Products in Cart
 
     Given kullanici "automation" sayfasina gider

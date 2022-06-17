@@ -18,6 +18,8 @@ import java.util.List;
 import java.util.function.Function;
 
 public class ReusableMethods {
+    private static int timeout = 5;
+
 
     public static String getScreenshot(String name) throws IOException {
         // naming the screenshot with the current date to avoid duplication
@@ -44,7 +46,16 @@ public class ReusableMethods {
         }
         Driver.getDriver().switchTo().window(origin);
     }
-
+    public static void waitAndClick(WebElement element) throws InterruptedException {
+        for (int i = 0; i < timeout; i++) {
+            try {
+                element.click();
+                return;
+            } catch (WebDriverException e) {
+             Thread.sleep(5000);
+            }
+        }
+    }
     //========Hover Over=====//
     public static void hover(WebElement element) {
         Actions actions = new Actions(Driver.getDriver());

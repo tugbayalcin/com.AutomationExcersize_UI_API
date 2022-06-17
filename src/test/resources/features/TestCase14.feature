@@ -1,5 +1,6 @@
 @US14
 Feature: TC14_PlaceOrderRegisterWhileCheckout
+  @alltest
   Scenario:
 
     Given The user goes to the "automation" page

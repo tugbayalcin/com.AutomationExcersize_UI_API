@@ -18,15 +18,15 @@ public class TestCase24Stepdefinitions {
     ProductPage productPage =new ProductPage();
 
     @Given("Click Continue button")
-    public void click_continue_button() {
+    public void click_continue_button() throws InterruptedException {
 
-        Driver.waitAndClick(cardPage.continueButtont);
+       ReusableMethods.waitAndClick(cardPage.continueButtont);
 
     }
 
     @Given("Click Cart button")
-    public void click_cart_button() {
-        Driver.waitAndClick(placeOrderCheckoutPage.cartButtonHomePage);
+    public void click_cart_button() throws InterruptedException {
+        ReusableMethods.waitAndClick(placeOrderCheckoutPage.cartButtonHomePage);
     }
 
     @Given("Verify that cart page is displayed")
@@ -35,8 +35,8 @@ public class TestCase24Stepdefinitions {
     }
 
     @Given("Click Proceed To Checkout")
-    public void click_proceed_to_checkout() {
-        Driver.waitAndClick(placeOrderCheckoutPage.proceedToCheckoutButton);
+    public void click_proceed_to_checkout() throws InterruptedException {
+        ReusableMethods.waitAndClick(placeOrderCheckoutPage.proceedToCheckoutButton);
     }
 
 
@@ -49,8 +49,8 @@ public class TestCase24Stepdefinitions {
 
 
     @Given("Click Proceed To Checkout button")
-    public void click_proceed_to_checkout_button() {
-        Driver.waitAndClick(productPage.proceedToCheckoutButton);
+    public void click_proceed_to_checkout_button() throws InterruptedException {
+        ReusableMethods.waitAndClick(productPage.proceedToCheckoutButton);
 
 
 
@@ -78,9 +78,9 @@ public class TestCase24Stepdefinitions {
     }
 
     @Given("Click Pay and Confirm Order button")
-    public void click_pay_and_confirm_order_button() throws IOException {
+    public void click_pay_and_confirm_order_button() throws IOException, InterruptedException {
         ReusableMethods.waitFor(2);
-        Driver.waitAndClick( placeOrderCheckoutPage.payAndConfirmOrderButton);
+        ReusableMethods.waitAndClick( placeOrderCheckoutPage.payAndConfirmOrderButton);
         ReusableMethods.getScreenshot("Your order has been placed successfully! YAZİSİ");
 
     }
@@ -88,9 +88,9 @@ public class TestCase24Stepdefinitions {
 
 
     @Given("Click Register and Login button")
-    public void click_register_and_login_button() {
+    public void click_register_and_login_button() throws InterruptedException {
         ReusableMethods.waitFor(1);
-        Driver.waitAndClick(productPage.registerLoginButtonu);
+        ReusableMethods.waitAndClick(productPage.registerLoginButtonu);
 
     }
     @Given("Verify success message Your order has been placed successfully!")
@@ -101,9 +101,9 @@ public class TestCase24Stepdefinitions {
     }
 
     @Given("Click  Delete Account button")
-    public void click_delete_account_button() {
+    public void click_delete_account_button() throws InterruptedException {
 
-        Driver.waitAndClick(cardPage.deleteAccountButton);
+        ReusableMethods.waitAndClick(cardPage.deleteAccountButton);
 
     }
     @Given("Verify ACCOUNT DELETED! and click Continue button")
@@ -113,20 +113,20 @@ public class TestCase24Stepdefinitions {
 
     }
     @Given("Click Register  Login button")
-    public void click_register_login_button() {
+    public void click_register_login_button() throws InterruptedException {
         ReusableMethods.waitFor(1);
-        Driver.waitAndClick(cardPage.registerLoginButtonu);
+        ReusableMethods.waitAndClick(cardPage.registerLoginButtonu);
 
     }
     @Given("Verify ACCOUNT CREATED! and click Continue button")
-    public void verify_account_created_and_click_continue_button() {
+    public void verify_account_created_and_click_continue_button() throws InterruptedException {
         String expectedYaziElementi="ACCOUNT CREATED!";
         String actualYaziElementi=cardPage.accountCreatedYaziElementi.getText();
         // System.out.println("actualYaziElementi = " + actualYaziElementi);
 
         Assert.assertEquals(expectedYaziElementi,actualYaziElementi);
         ReusableMethods.waitFor(2);
-        Driver.waitAndClick(cardPage.continueButton);
+        ReusableMethods.waitAndClick(cardPage.continueButton);
 
     }
 
@@ -140,9 +140,9 @@ public class TestCase24Stepdefinitions {
     }
 
     @Given("Click Download Invoice button and verify invoice is downloaded successfully.")
-    public void click_download_invoice_button_and_verify_invoice_is_downloaded_successfully() {
+    public void click_download_invoice_button_and_verify_invoice_is_downloaded_successfully() throws InterruptedException {
         ReusableMethods.waitFor(5);
-        Driver.waitAndClick(cardPage.invoiceButton);
+        ReusableMethods.waitAndClick(cardPage.invoiceButton);
 
         String expectedPath = System.getProperty("user.dir") + "/Downloads/invoice.txt";
         System.out.println("expectedPath = " + expectedPath);
@@ -154,8 +154,8 @@ public class TestCase24Stepdefinitions {
     }
 
     @Given("Add products to cart")
-    public void add_products_to_cart() {
-        Driver.waitAndClick(cardPage.addToCartButonut);
+    public void add_products_to_cart() throws InterruptedException {
+        ReusableMethods.waitAndClick(cardPage.addToCartButonut);
         cardPage.continueShoppingButonu.click();
 
     }

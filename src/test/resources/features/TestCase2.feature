@@ -2,7 +2,7 @@ Feature: Test Case 2
 
   Background: Automation sayfasina gitme
     Given The user goes to the "automation" page
-  @TC2
+  @alltest
   Scenario: Test Case 2  Login User with correct email and password
 
     Then  The user  verify that home page is visible successfully

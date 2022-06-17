@@ -1,5 +1,5 @@
 Feature:  TestCase10:Verify Subscription in home page
-@TC10
+  @alltest
   Scenario:
 
     Given The user goes to the "automation" page

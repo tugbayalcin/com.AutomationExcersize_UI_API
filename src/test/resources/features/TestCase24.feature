@@ -1,5 +1,5 @@
 Feature: US24
-
+  @alltest
   Scenario: TC24  Download Invoice after purchase order
     * The user goes to the "automation" page
     * The user  verify that home page is visible successfully

@@ -1,7 +1,7 @@
 Feature: Test Case 3
   Background: Automation sayfasina gitme
     Given The user goes to the "automation" page
-  @TC3
+  @alltest
   Scenario Outline: Test Case 3 Login User with incorrect email and password
     Then  The user  verify that home page is visible successfully
     And   The user  clicks the signin button on the header
