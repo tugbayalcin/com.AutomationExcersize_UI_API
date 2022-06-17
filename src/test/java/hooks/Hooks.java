@@ -17,8 +17,7 @@ public class Hooks
     // eger senaryo failed olursa fotograf ceker
     // ancak burada close driver oldugu icin artik steplerimize close driver koymamaliyiz
     // yoksa sayfayi kapatip yeniden acar
- /*   @After
-
+    @After
     public void tearDown(Scenario scenario)
     {
         final byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
@@ -26,8 +25,8 @@ public class Hooks
         {
             scenario.attach(screenshot, "image/png","screenshots");
         }
-        //Driver.closeDriver();
+        Driver.closeDriver();
     }
-    */
+
 
 }

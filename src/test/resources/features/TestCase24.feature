@@ -9,7 +9,7 @@ Feature: US24
     *  Click Proceed To Checkout
     *  Click Register  Login button
     *  Fill all details in Signup and create account
-    *  Verify ACCOUNT CREATED! and click Continue button
+    *  VerifyA ACCOUNT CREATED! and click Continue button
     *  Verify Logged in as username at top
     *  Click Cart button
     *  Click Proceed To Checkout button

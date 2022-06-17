@@ -1,7 +1,9 @@
-@US14
 Feature: TC14_PlaceOrderRegisterWhileCheckout
-  @alltest
-  Scenario:
+
+
+  @US14
+  Scenario: TC14
+
 
     Given The user goes to the "automation" page
     Then  The user  verify that home page is visible successfully
