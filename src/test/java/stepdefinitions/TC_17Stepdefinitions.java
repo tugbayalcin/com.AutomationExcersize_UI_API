@@ -16,7 +16,7 @@ public class TC_17Stepdefinitions {
     @When("Click X button corresponding to particular product")
     public void click_x_button_corresponding_to_particular_product() throws InterruptedException {
         js.executeScript("javascript:window.scrollBy(0,400)");
-        page.cardPage().productDelete.click();
+         page.cardPage().productDelete.click();
         Thread.sleep(2000);
         Log.info("Clicked the X button corresponding to a specific product");
     }

@@ -142,8 +142,22 @@
             <artifactId>lombok</artifactId>
             <version>1.18.24</version>
         </dependency>
-
-        <!--
+        <!-- https://mvnrepository.com/artifact/com.github.ldaniels528/scalajs-npm-htmltojson -->
+        <dependency>
+            <groupId>com.github.ldaniels528</groupId>
+            <artifactId>scalajs-npm-htmltojson_sjs0.6_2.11</artifactId>
+            <version>0.2.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.14.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.83_noneautotype</version>
+        </dependency><!--
          <dependency>
              <groupId>log4j</groupId>
              <artifactId>log4j</artifactId>

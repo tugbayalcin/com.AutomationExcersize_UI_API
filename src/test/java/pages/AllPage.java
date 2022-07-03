@@ -26,6 +26,7 @@ public class AllPage {
     }
 
     public HomePage homePage(){
+
         if(homePage==null){
             homePage=new HomePage();
         }return homePage;

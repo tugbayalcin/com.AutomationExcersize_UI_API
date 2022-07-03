@@ -24,12 +24,16 @@ public class TC12_TC13 {
 
     JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
 
+    public static void main(String[] args) {
 
+    }
 
     //US12  Fikri
 
     @Given("Verify that home page is visible successfully")
     public void verify_that_home_page_is_visible_successfully() {
+
+
         String expectedData ="Automation Exercise";
         String actualData = Driver.getDriver().getTitle();
         Assert.assertTrue(expectedData.equals(actualData));

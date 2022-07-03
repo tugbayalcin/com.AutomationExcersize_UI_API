@@ -3,6 +3,7 @@ Feature: ortak adimlar
   Background: Automation sayfasina gitme
     Given The user goes to the "automation" page
 
+    @first
 Scenario:Login ve logout olma
 
   Then  The user  verify that home page is visible successfully
